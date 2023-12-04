@@ -25,6 +25,13 @@ export default {
           meridian sun strikes the upper surface of the impenetrable folliage of
           my trees, and but a few stray gleams steal into the inner sanctuary
         </p>
+        <div class="buttons d-flex justify-content-start mt-5">
+          <AppButton
+            btnText="Try It Now"
+            btnClass="btnPink pageBtn"
+            class="me-4" />
+          <AppButton btnText="Explore More" btnClass="btnBlue pageBtn" />
+        </div>
       </div>
     </div>
   </section>
