@@ -28,7 +28,7 @@ export default {
           <AppButton btnText="Explore More" btnClass="btnBlue pageBtn" />
         </div>
       </div>
-      <div class="picture">
+      <div class="image">
         <img src="../assets/img/header.png" alt="" />
       </div>
     </div>
