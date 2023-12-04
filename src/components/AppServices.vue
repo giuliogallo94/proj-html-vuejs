@@ -1,9 +1,10 @@
 <script>
+import { store } from "../store";
 import AppServicesCard from "./AppServicesCard.vue";
 
 export default {
   data() {
-    return {};
+    return { store };
   },
   components: { AppServicesCard },
 };
@@ -16,8 +17,12 @@ export default {
       <h2><b>What</b> We Do</h2>
       <p>When, while the lovely valley teems with vapour around meand the</p>
     </div>
-    <div class="card-list">
-      <AppServicesCard />
+    <div class="container text-center card-list py-5">
+      <div class="row row-cols-4 g-5">
+        <AppServicesCard
+          v-for="cardObj in store.servicesCard"
+          :card="cardObj" />
+      </div>
     </div>
   </div>
 </template>

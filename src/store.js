@@ -33,4 +33,22 @@ export const store = reactive({
       isSelected: false,
     },
   ],
+  servicesCard: [
+    {
+      name: "Data Analysis",
+      url: "247",
+    },
+    {
+      name: "SEO Optimization",
+      url: "567",
+    },
+    {
+      name: "Security Data",
+      url: "538",
+    },
+    {
+      name: "Branding Strategy",
+      url: "566",
+    },
+  ],
 });
