@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div class="col">
+  <div class="col-4">
     <div class="card p-5">
       <h2>
         <b>{{ priceOption.name }}</b>

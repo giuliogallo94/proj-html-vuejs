@@ -13,7 +13,7 @@ export default {
 
 <template>
   <section>
-    <div class="ms_container p-5">
+    <div class="ms_container p-5 d-flex flex-column align-items-center">
       <div class="title text-center pb-5">
         <p class="pink-p">Price List</p>
         <h2><b>Our</b> Pricing</h2>
@@ -22,9 +22,8 @@ export default {
           meridian sun strikes the upper surface
         </p>
       </div>
-      <div
-        class="container d-flex justify-content-center align-items-center px-0 text-center">
-        <div class="row row-cols-3 my-0 mx-auto w-100">
+      <div class="container mx-0 px-0 text-center">
+        <div class="row w-100">
           <AppPricingCard
             v-for="item in store.pricingCard"
             :priceOption="item" />
@@ -39,12 +38,19 @@ export default {
 
 section {
   background-color: $bgBlue;
+  position: relative;
+  padding-bottom: 15rem;
   .title {
     color: white;
 
     .pink-p {
       color: $mainPink;
     }
+  }
+
+  .container {
+    position: absolute;
+    top: 40%;
   }
 }
 </style>
