@@ -2,6 +2,7 @@
 import { store } from "./store";
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 export default {
   data() {
     return {
@@ -11,6 +12,7 @@ export default {
   components: {
     AppHeader,
     AppMain,
+    AppFooter,
   },
   // mounted() {
   //   for (let i = 0; i < this.store.pricingCard.length; i++) {
@@ -24,6 +26,7 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
+  <AppFooter />
 </template>
 
 <style lang="scss">

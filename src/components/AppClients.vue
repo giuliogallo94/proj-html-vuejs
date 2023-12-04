@@ -10,7 +10,9 @@ export default {
 <template>
   <section>
     <div class="ms_container d-flex justify-content-around">
-      <div v-for="sponsor in store.clients" class="logo-sponsor">
+      <div
+        v-for="sponsor in store.clients"
+        class="logo-sponsor align-self-center">
         <img
           :src="`src/assets/img/${sponsor.url}`"
           alt=""
@@ -23,6 +25,7 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 section {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 </style>

@@ -1,11 +1,23 @@
 <script>
+import AppFunnel from "./AppFunnel.vue";
+
 export default {
   data() {
     return {};
   },
+  components: { AppFunnel },
 };
 </script>
 
-<template><h2>Mio Titolo</h2></template>
+<template>
+  <footer><AppFunnel /></footer>
+</template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
+footer {
+  min-height: 1000px;
+  background-color: $bgBlue;
+}
+</style>
