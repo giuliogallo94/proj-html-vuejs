@@ -1,12 +1,13 @@
 <script>
 import { store } from "../store";
+import AppButton from "./AppButton.vue";
 import AppServicesCard from "./AppServicesCard.vue";
 
 export default {
   data() {
     return { store };
   },
-  components: { AppServicesCard },
+  components: { AppServicesCard, AppButton },
 };
 </script>
 
@@ -23,6 +24,9 @@ export default {
           v-for="cardObj in store.servicesCard"
           :card="cardObj" />
       </div>
+    </div>
+    <div class="button pt-5 pb-3">
+      <AppButton btnText="View All Services" btnClass="btnPink pageBtn" />
     </div>
   </div>
 </template>

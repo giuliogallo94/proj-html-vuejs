@@ -23,7 +23,7 @@ export default {
         <div class="buttons d-flex justify-content-start">
           <AppButton
             btnText="Try It Now"
-            btnClass="btnRed pageBtn"
+            btnClass="btnPink pageBtn"
             class="me-4" />
           <AppButton btnText="Explore More" btnClass="btnBlue pageBtn" />
         </div>

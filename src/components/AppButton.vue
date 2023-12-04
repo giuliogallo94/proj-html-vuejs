@@ -22,6 +22,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 .ms_button {
+  //   width: fit-content;
   button {
     border: none;
   }
@@ -37,7 +38,7 @@ export default {
     rgba(29, 66, 134, 1) 100%
   );
 }
-.btnRed {
+.btnPink {
   background: linear-gradient(
     90deg,
     rgba(200, 54, 109, 1) 0%,
@@ -53,4 +54,8 @@ export default {
 .pageBtn {
   padding: 0.4rem 2rem;
 }
+
+// .shadow {
+//   box-shadow: 100px 100px 100px 100px black;
+// }
 </style>
