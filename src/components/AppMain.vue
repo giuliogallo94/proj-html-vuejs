@@ -4,6 +4,7 @@ import AppStartProject from "./AppStartProject.vue";
 import AppPricing from "./AppPricing.vue";
 import AppBlog from "./AppBlog.vue";
 import AppTestimonial from "./AppTestimonial.vue";
+import AppClients from "./AppClients.vue";
 
 export default {
   data() {
@@ -15,6 +16,7 @@ export default {
     AppPricing,
     AppBlog,
     AppTestimonial,
+    AppClients,
   },
 };
 </script>
@@ -25,6 +27,7 @@ export default {
   <AppPricing />
   <AppBlog />
   <AppTestimonial />
+  <AppClients />
 </template>
 
 <style scoped></style>

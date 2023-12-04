@@ -141,4 +141,26 @@ export const store = reactive({
       vote: 3,
     },
   ],
+  clients: [
+    {
+      name: "Golden",
+      url: "client-1-1.png",
+    },
+    {
+      name: "Sweety Cafeteria",
+      url: "clienty-2.png",
+    },
+    {
+      name: "Fastlane Sportswear",
+      url: "clienty-4.png",
+    },
+    {
+      name: "Mighty Furnitures",
+      url: "client-5.png",
+    },
+    {
+      name: "Jack Roller",
+      url: "clienty-3.png",
+    },
+  ],
 });
