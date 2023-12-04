@@ -14,7 +14,7 @@ export default {
 <template>
   <section>
     <div class="ms_container p-5">
-      <div class="title text-center">
+      <div class="title text-center pb-5">
         <p class="pink-p">Price List</p>
         <h2><b>Our</b> Pricing</h2>
         <p>
@@ -22,8 +22,13 @@ export default {
           meridian sun strikes the upper surface
         </p>
       </div>
-      <div class="pricingOptions d-flex justify-content-between">
-        <AppPricingCard v-for="item in store.pricingCard" :priceOption="item" />
+      <div
+        class="container d-flex justify-content-center align-items-center px-0 text-center">
+        <div class="row row-cols-3 my-0 mx-auto w-100">
+          <AppPricingCard
+            v-for="item in store.pricingCard"
+            :priceOption="item" />
+        </div>
       </div>
     </div>
   </section>
