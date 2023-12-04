@@ -5,10 +5,23 @@ export default {
   data() {
     return {
       store,
+      isSelected: false,
     };
   },
   components: {
     AppButton,
+  },
+  methods: {
+    selectedLink(link, index) {
+      console.log("click");
+      {
+        for (link = 0; link < this.store.navLinks.length; link++) {
+          console.log(this.store.navLinks[link]);
+          this.store.navLinks[link].isSelected = false;
+        }
+        this.store.navLinks[index].isSelected = true;
+      }
+    },
   },
 };
 </script>
@@ -23,7 +36,11 @@ export default {
         <!-- NavLinks -->
         <div class="me-4">
           <ul class="list-group list-group-horizontal list-unstyled">
-            <li v-for="link in store.navLinks" class="mx-2">
+            <li
+              v-for="(link, index) in store.navLinks"
+              class="mx-2"
+              :class="link.isSelected ? `selected` : ``"
+              @click="selectedLink(index, index)">
               <a :href="link.url" class="text-decoration-none ms_nav-links">
                 {{ link.linkName }}
               </a>
@@ -39,10 +56,23 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 .ms_container {
   .ms_navbar {
     a {
       color: white;
+    }
+  }
+
+  li:hover a {
+    color: $mainPink;
+  }
+
+  .selected {
+    a {
+      color: $mainPink;
+      font-weight: bold;
     }
   }
 }

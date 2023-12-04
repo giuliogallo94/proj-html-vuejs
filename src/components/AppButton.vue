@@ -32,7 +32,7 @@ export default {
 .btnBlue {
   background: linear-gradient(
     90deg,
-    $blueBtn 0%,
+    $mainBlue 0%,
     rgba(18, 109, 166, 1) 50%,
     rgba(29, 66, 134, 1) 100%
   );
@@ -42,7 +42,7 @@ export default {
     90deg,
     rgba(200, 54, 109, 1) 0%,
     rgba(212, 64, 109, 1) 50%,
-    $redBtn 100%
+    $mainPink 100%
   );
 }
 
