@@ -5,14 +5,14 @@ export default {
   },
   props: {
     btnText: String,
-    btnColor: String,
+    btnClass: String,
   },
 };
 </script>
 
 <template>
-  <div class="ms_button ms-4">
-    <button class="rounded-pill" :class="btnColor">
+  <div class="ms_button">
+    <button class="rounded-pill" :class="btnClass">
       <a href="" class="text-decoration-none"> {{ btnText }}</a>
     </button>
   </div>

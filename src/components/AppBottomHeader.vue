@@ -1,11 +1,49 @@
 <script>
+import AppButton from "./AppButton.vue";
+
 export default {
   data() {
     return {};
   },
+  components: { AppButton },
 };
 </script>
 
-<template></template>
+<template>
+  <div class="ms_container">
+    <div class="header-bottom d-flex py-2 align-items-center">
+      <div class="title w-50">
+        <h2 class="lh-base">
+          <b>Business Planning</b> Digital Technology <b>Modern Solution !</b>
+        </h2>
+        <p class="my-5">
+          When, while the lovely valley teems with vapour around meand the
+          meridian sun strikes the upper surface.
+        </p>
+        <div class="buttons d-flex justify-content-start">
+          <AppButton
+            btnText="Try It Now"
+            btnClass="btnRed pageBtn"
+            class="me-4" />
+          <AppButton btnText="Explore More" btnClass="btnBlue pageBtn" />
+        </div>
+      </div>
+      <div class="picture">
+        <img src="../assets/img/header.png" alt="" />
+      </div>
+    </div>
+  </div>
+</template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.title {
+  margin-right: 5rem;
+  h2 {
+    color: white;
+    font-size: 60px;
+  }
+  p {
+    color: #03a7d3e6;
+  }
+}
+</style>
