@@ -51,4 +51,42 @@ export const store = reactive({
       url: "566",
     },
   ],
+  pricingCard: [
+    {
+      name: "Designing",
+      subName: "PROCESS",
+      price: "40",
+      optionInfo: [
+        { title: "Creative", features: "Design Enabled" },
+        { title: "Vibrant", features: "Color Usage" },
+        { title: "Eye", features: "Catching Design" },
+        { title: "Extreme", features: "Typography" },
+        { title: "Exceptional", features: "Design" },
+      ],
+    },
+    {
+      name: "Developing",
+      subName: "PRODUCT",
+      price: "60",
+      optionInfo: [
+        { title: "Creative", features: "Design Enabled" },
+        { title: "Vibrant", features: "Color Usage" },
+        { title: "Eye", features: "Catching Design" },
+        { title: "Extreme", features: "Typography" },
+        { title: "Exceptional", features: "Design" },
+      ],
+    },
+    {
+      name: "Supporting",
+      subName: "CLIENTS",
+      price: "80",
+      optionInfo: [
+        { title: "Creative", features: "Design Enabled" },
+        { title: "Vibrant", features: "Color Usage" },
+        { title: "Eye", features: "Catching Design" },
+        { title: "Extreme", features: "Typography" },
+        { title: "Exceptional", features: "Design" },
+      ],
+    },
+  ],
 });
