@@ -1,11 +1,16 @@
 <script>
+import AppServices from "./AppServices.vue";
+
 export default {
   data() {
     return {};
   },
+  components: { AppServices },
 };
 </script>
 
-<template><h2>Mio Titolo</h2></template>
+<template>
+  <AppServices />
+</template>
 
 <style scoped></style>

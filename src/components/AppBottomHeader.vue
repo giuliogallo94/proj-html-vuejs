@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="ms_container">
-    <div class="header-bottom d-flex py-2 align-items-center">
+    <div class="header-bottom pt-3 d-flex align-items-center">
       <div class="title w-50">
         <h2 class="lh-base">
           <b>Business Planning</b> Digital Technology <b>Modern Solution !</b>
@@ -36,14 +36,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.title {
-  margin-right: 5rem;
-  h2 {
-    color: white;
-    font-size: 60px;
-  }
-  p {
-    color: #03a7d3e6;
+.header-bottom {
+  padding-bottom: 8rem;
+  .title {
+    margin-right: 5rem;
+    h2 {
+      color: white;
+      font-size: 60px;
+    }
+    p {
+      color: #03a7d3e6;
+    }
   }
 }
 </style>

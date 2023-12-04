@@ -13,10 +13,8 @@ export default {
   },
   methods: {
     selectedLink(link, index) {
-      console.log("click");
       {
         for (link = 0; link < this.store.navLinks.length; link++) {
-          console.log(this.store.navLinks[link]);
           this.store.navLinks[link].isSelected = false;
         }
         this.store.navLinks[index].isSelected = true;
