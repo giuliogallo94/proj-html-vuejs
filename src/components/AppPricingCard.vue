@@ -19,7 +19,7 @@ export default {
         <b>{{ priceOption.name }}</b>
       </h2>
       <p>{{ priceOption.subName }}</p>
-      <span class="w-50">$</span>
+      <span class="w-75">$</span>
       <p class="price">
         <b>{{ priceOption.price }}</b>
       </p>

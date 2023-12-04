@@ -28,6 +28,7 @@ export default {
   }
   a {
     color: white;
+    font-size: 17px;
   }
 }
 .btnBlue {
@@ -47,6 +48,14 @@ export default {
   );
 }
 
+.btnWhite {
+  background-color: white;
+
+  a {
+    color: rgba(0, 0, 0, 0.616);
+  }
+}
+
 .navBtn {
   padding: 0.4rem 1.4rem;
 }
@@ -54,8 +63,4 @@ export default {
 .pageBtn {
   padding: 0.4rem 2rem;
 }
-
-// .shadow {
-//   box-shadow: 100px 100px 100px 100px black;
-// }
 </style>
