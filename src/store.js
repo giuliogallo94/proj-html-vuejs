@@ -115,4 +115,30 @@ export const store = reactive({
         "When, while the lovely valley teems with vapot around me, and the meridian sun s...",
     },
   ],
+  testimonials: [
+    {
+      name: "Michkel Angel",
+      position: "Marketing Manager",
+      image: "szabo-viktor-1266895-unsplash-1024x1024.png",
+      comment:
+        "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
+      vote: 3,
+    },
+    {
+      name: "Michkel Angel",
+      position: "Marketing Manager",
+      image: "philipe-cavalcante-539505-unsplash-1024x1024.png",
+      comment:
+        "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
+      vote: 3,
+    },
+    {
+      name: "Michkel Angel",
+      position: "Marketing Manager",
+      image: "philipe-cavalcante-539505-unsplash-1024x1024.png",
+      comment:
+        "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
+      vote: 3,
+    },
+  ],
 });

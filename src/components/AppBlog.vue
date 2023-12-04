@@ -28,13 +28,8 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
 section {
   padding-top: 25rem;
-
-  .title {
-    .up-title {
-      color: $mainPink;
-    }
-  }
 }
 </style>

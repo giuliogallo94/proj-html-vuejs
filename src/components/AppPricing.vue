@@ -15,7 +15,7 @@ export default {
   <section>
     <div class="ms_container p-5 d-flex flex-column align-items-center">
       <div class="title text-center pb-5">
-        <p class="pink-p">Price List</p>
+        <p class="up-title">Price List</p>
         <h2><b>Our</b> Pricing</h2>
         <p>
           When, while the lovely valley teems with vapour around meand the
@@ -42,10 +42,6 @@ section {
   padding-bottom: 15rem;
   .title {
     color: white;
-
-    .pink-p {
-      color: $mainPink;
-    }
   }
 
   .container {

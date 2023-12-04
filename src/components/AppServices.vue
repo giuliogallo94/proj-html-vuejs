@@ -35,12 +35,4 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
-
-.ms_container {
-  .title {
-    .up-title {
-      color: $mainPink;
-    }
-  }
-}
 </style>
