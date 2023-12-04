@@ -31,7 +31,7 @@ export default {
       </div>
       <!-- // NavLinks -->
       <!-- Sign In Button -->
-      <AppButton btnText="Sign In" btnColor="btnBlue" />
+      <AppButton btnText="Sign In" btnColor="btnBlue navBtn" />
     </div>
   </div>
 </template>

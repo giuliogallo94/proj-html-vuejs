@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div class="ms_button ms-4">
-    <button class="rounded-pill py-2 px-4" :class="btnColor">
+    <button class="rounded-pill" :class="btnColor">
       <a href="" class="text-decoration-none"> {{ btnText }}</a>
     </button>
   </div>
@@ -42,7 +42,15 @@ export default {
     90deg,
     rgba(200, 54, 109, 1) 0%,
     rgba(212, 64, 109, 1) 50%,
-    rgba(233, 84, 108, 1) 100%
+    $redBtn 100%
   );
+}
+
+.navBtn {
+  padding: 0.4rem 1.4rem;
+}
+
+.pageBtn {
+  padding: 0.4rem 2rem;
 }
 </style>
