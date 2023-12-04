@@ -1,0 +1,48 @@
+<script>
+export default {
+  data() {
+    return {};
+  },
+  props: {
+    btnText: String,
+    btnColor: String,
+  },
+};
+</script>
+
+<template>
+  <div class="ms_button ms-4">
+    <button class="rounded-pill py-2 px-4" :class="btnColor">
+      <a href="" class="text-decoration-none"> {{ btnText }}</a>
+    </button>
+  </div>
+</template>
+/Users/ggallo/Desktop/corporate-landing/screencapture.png
+<style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
+.ms_button {
+  button {
+    border: none;
+  }
+  a {
+    color: white;
+  }
+}
+.btnBlue {
+  background: linear-gradient(
+    90deg,
+    $blueBtn 0%,
+    rgba(18, 109, 166, 1) 50%,
+    rgba(29, 66, 134, 1) 100%
+  );
+}
+.btnRed {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 54, 109, 1) 0%,
+    rgba(212, 64, 109, 1) 50%,
+    rgba(233, 84, 108, 1) 100%
+  );
+}
+</style>

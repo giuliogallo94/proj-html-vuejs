@@ -8,4 +8,4 @@ export default {
 
 <template></template>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

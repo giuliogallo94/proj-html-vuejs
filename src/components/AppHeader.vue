@@ -19,4 +19,10 @@ export default {
   </header>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
+header {
+  background-color: $bgBlue;
+}
+</style>
