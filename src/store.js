@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+  currentIndex: 0,
   navLinks: [
     {
       linkName: "Home",
@@ -51,7 +52,7 @@ export const store = reactive({
       url: "566",
     },
   ],
-  carousel: [
+  portfolio: [
     {
       title: "Satisfy Poster",
       subtitle: "Digital Experience",
