@@ -19,7 +19,9 @@ export default {
       <h6>{{ post.title }}</h6>
       <p class="post-p m-0">{{ post.paragraph }}</p>
     </div>
-    <AppButton btnText="Read More" btnClass="btnWhite pageBtn" />
+    <div class="button">
+      <AppButton btnText="Read More" btnClass="btnWhite pageBtn" />
+    </div>
   </div>
 </template>
 
@@ -30,7 +32,21 @@ export default {
   background-image: url(../assets/img/headway-537308-unsplash-1380x703.jpg);
   background-size: cover;
   color: white;
+  position: relative;
+  z-index: -2;
 
+  // Create background-image shadow
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 2rem;
+  }
   .post-p {
     font-size: 13px;
   }

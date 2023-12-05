@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div class="col-4">
-    <div class="card p-5">
+    <div class="card p-5 rounded-5">
       <h2>
         <b>{{ priceOption.name }}</b>
       </h2>
@@ -54,7 +54,6 @@ export default {
   }
 
   .price-bg {
-    // max-height: fit-content;
     font-size: 250px;
     position: absolute;
     top: -15%;
