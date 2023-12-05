@@ -1,23 +1,26 @@
 <script>
 import AppFunnel from "./AppFunnel.vue";
+import AppTopFooter from "./AppTopFooter.vue";
 
 export default {
   data() {
     return {};
   },
-  components: { AppFunnel },
+  components: { AppFunnel, AppTopFooter },
 };
 </script>
 
 <template>
-  <footer><AppFunnel /></footer>
+  <footer class="pb-5">
+    <AppFunnel />
+    <AppTopFooter />
+  </footer>
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
 footer {
-  min-height: 1000px;
-  background-color: $bgBlue;
+  background-color: #060634;
 }
 </style>
