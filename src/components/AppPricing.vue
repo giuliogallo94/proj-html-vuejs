@@ -8,6 +8,14 @@ export default {
   components: {
     AppPricingCard,
   },
+  methods: {
+    changeClasses(index) {
+      for (let i = 0; i < this.store.pricingCard.length; i++) {
+        this.store.pricingCard[i].isSelected = false;
+      }
+      this.store.pricingCard[index].isSelected = true;
+    },
+  },
 };
 </script>
 
@@ -22,33 +30,20 @@ export default {
           meridian sun strikes the upper surface
         </p>
       </div>
-      <!-- <div class="container mx-0 px-0 text-center">
-        <div class="row w-100">
-          <AppPricingCard
-            v-for="item in store.pricingCard"
-            :priceOption="item" />
-        </div>
-      </div> -->
       <div class="container mx-0 px-0 text-center">
         <div class="row">
           <AppPricingCard
-            optionName="Designing"
-            optionSubname="PROCESS"
-            optionPrice="40"
-            optionClass="white-card"
-            btnClass="btnPinkPrice priceBtn pageBtn" />
-          <AppPricingCard
-            optionName="Developing"
-            optionSubname="PRODUCT"
-            optionPrice="60"
-            optionClass="pink-card"
-            btnClass="btnWhitePrice priceBtn pageBtn" />
-          <AppPricingCard
-            optionName="Supporting"
-            optionSubname="CLIENTS"
-            optionPrice="80"
-            optionClass="white-card"
-            btnClass="btnPink priceBtn pageBtn" />
+            v-for="(item, option) in store.pricingCard"
+            :key="option"
+            :priceOption="item"
+            :btnClass="
+              item.isSelected == true
+                ? `btnWhiteArrow pageBtn`
+                : `btnPinkArrow pageBtn`
+            "
+            :optionClass="item.isSelected == true ? `pink-card` : `white-card`"
+            @click="changeClasses(option)"
+            @mouseleave="" />
         </div>
       </div>
     </div>

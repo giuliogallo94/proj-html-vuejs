@@ -6,94 +6,43 @@ export default {
     return { store };
   },
   props: {
+    priceOption: String,
     btnClass: String,
     optionClass: String,
-    optionName: String,
-    optionSubname: String,
-    optionPrice: String,
   },
   components: { AppButton },
 };
 </script>
 
 <template>
-  <!-- <div class="col-4">
-    <div
-      class="card white-card p-5 rounded-5 shadow-lg border-0"
-      :class="priceClass">
-      <h2>
-        <b>{{ priceOption.name }}</b>
-      </h2>
-      <p>{{ priceOption.subName }}</p>
-      <span class="w-75">$</span>
-      <p class="price">
-        <b>{{ priceOption.price }}</b>
-      </p>
-      <div class="price-bg">
-        <b>{{ priceOption.price }}</b>
-      </div>
-      <span class="month">Per Month</span>
-      <span>{{ priceOption.optionInfo }}</span>
-      <div class="price-option-info py-5">
-        <ul class="list-unstyled lh-lg features">
-          <li v-for="(info, featureIndex) in priceOption.optionInfo">
-            <b>{{ info.title }}</b>
-            {{ info.features }}
-          </li>
-        </ul>
-      </div>
-      <div class="button">
-        <AppButton btnText="Order Now" btnClass="btnPink pageBtn" />
-      </div>
-    </div>
-  </div> -->
-
   <div class="col-4">
     <div
       class="card p-5 rounded-5 shadow-lg border-0 align-items-center"
       :class="optionClass">
       <div class="optionInfo d-flex flex-column align-items-center lh-lg">
         <h2>
-          <b>{{ optionName }}</b>
+          <b>{{ priceOption.name }}</b>
         </h2>
-        <p>{{ optionSubname }}</p>
+        <p>{{ priceOption.subName }}</p>
         <div class="price mt-3 lh-1">
           <span class="dollar">$</span>
-          <p>
-            <b>{{ optionPrice }}</b>
+          <p class="price">
+            <b>{{ priceOption.price }}</b>
           </p>
-          <span class="month">Per Month</span>
         </div>
-
         <div class="price-bg">
-          <b>{{ optionPrice }}</b>
+          <b>{{ priceOption.price }}</b>
         </div>
-      </div>
+        <span class="month">Per Month</span>
 
-      <!-- <span>{{ priceOption.optionInfo }}</span> -->
-      <div class="price-option-info py-4">
-        <ul class="list-unstyled features">
-          <li>
-            <b>Creative</b>
-            Design Enables
-          </li>
-          <li>
-            <b>Vibrant</b>
-            Color Usage
-          </li>
-          <li>
-            <b>Eye</b>
-            Catching Design
-          </li>
-          <li>
-            <b>Extreme</b>
-            Typography
-          </li>
-          <li>
-            <b>Exceptional</b>
-            Design
-          </li>
-        </ul>
+        <div class="price-option-info py-5">
+          <ul class="list-unstyled lh-lg features">
+            <li v-for="(info, index) in priceOption.optionInfo" :key="index">
+              <b>{{ info.title }}</b>
+              {{ info.features }}
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="button">
         <AppButton btnText="Order Now" :btnClass="btnClass" />

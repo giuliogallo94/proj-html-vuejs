@@ -15,7 +15,7 @@ export default {
   <section>
     <div
       class="ms_container text-center py-5 d-flex flex-column align-items-center">
-      <div class="title">
+      <div class="title mb-5">
         <p class="up-title">Our Services</p>
         <h2><b>What</b> We Do</h2>
         <p>When, while the lovely valley teems with vapour around meand the</p>

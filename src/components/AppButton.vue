@@ -6,13 +6,14 @@ export default {
   props: {
     btnText: String,
     btnClass: String,
+    btnTextClass: String,
   },
 };
 </script>
 
 <template>
   <div class="ms_button rounded-pill d-flex" :class="btnClass">
-    <button class="rounded-pill">
+    <button class="rounded-pill" :class="btnTextClass">
       <a href="" class="text-decoration-none"> {{ btnText }}</a>
     </button>
     <div class="arrow ms-4">&rarr;</div>
@@ -72,7 +73,7 @@ export default {
   }
 }
 
-.btnPinkPrice {
+.btnPinkArrow {
   background: linear-gradient(
     90deg,
     rgba(200, 54, 109, 1) 0%,
@@ -93,7 +94,7 @@ export default {
   }
 }
 
-.btnWhitePrice {
+.btnWhiteArrow {
   background-color: white;
 
   a {
@@ -114,7 +115,25 @@ export default {
   padding: 0.4rem 2rem;
 }
 
+.arrowBtn {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 54, 109, 1) 0%,
+    rgba(212, 64, 109, 1) 50%,
+    $mainPink 100%
+  );
+  padding: 0.5rem;
+  button {
+    a {
+      font-size: 25px;
+    }
+  }
+}
 .priceBtn {
-  font-weight: bold;
+  button {
+    .a {
+      font-weight: bold;
+    }
+  }
 }
 </style>
