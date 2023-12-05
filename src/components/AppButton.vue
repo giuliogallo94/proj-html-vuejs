@@ -18,7 +18,7 @@ export default {
     <div class="arrow ms-4">&rarr;</div>
   </div>
 </template>
-/Users/ggallo/Desktop/corporate-landing/screencapture.png
+
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
@@ -44,6 +44,15 @@ export default {
     rgba(18, 109, 166, 1) 50%,
     rgba(29, 66, 134, 1) 100%
   );
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(200, 54, 109, 1) 0%,
+      rgba(212, 64, 109, 1) 50%,
+      $mainPink 100%
+    );
+  }
 }
 .btnPink {
   background: linear-gradient(
@@ -52,6 +61,15 @@ export default {
     rgba(212, 64, 109, 1) 50%,
     $mainPink 100%
   );
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      $mainBlue 0%,
+      rgba(18, 109, 166, 1) 50%,
+      rgba(29, 66, 134, 1) 100%
+    );
+  }
 }
 
 .btnPinkPrice {

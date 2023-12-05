@@ -78,44 +78,44 @@ export const store = reactive({
       url: "84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
     },
   ],
-  pricingCard: [
-    {
-      name: "Designing",
-      subName: "PROCESS",
-      price: "40",
-      optionInfo: [
-        { title: "Creative", features: "Design Enabled" },
-        { title: "Vibrant", features: "Color Usage" },
-        { title: "Eye", features: "Catching Design" },
-        { title: "Extreme", features: "Typography" },
-        { title: "Exceptional", features: "Design" },
-      ],
-    },
-    {
-      name: "Developing",
-      subName: "PRODUCT",
-      price: "60",
-      optionInfo: [
-        { title: "Creative", features: "Design Enabled" },
-        { title: "Vibrant", features: "Color Usage" },
-        { title: "Eye", features: "Catching Design" },
-        { title: "Extreme", features: "Typography" },
-        { title: "Exceptional", features: "Design" },
-      ],
-    },
-    {
-      name: "Supporting",
-      subName: "CLIENTS",
-      price: "80",
-      optionInfo: [
-        { title: "Creative", features: "Design Enabled" },
-        { title: "Vibrant", features: "Color Usage" },
-        { title: "Eye", features: "Catching Design" },
-        { title: "Extreme", features: "Typography" },
-        { title: "Exceptional", features: "Design" },
-      ],
-    },
-  ],
+  // pricingCard: [
+  //   {
+  //     name: "Designing",
+  //     subName: "PROCESS",
+  //     price: "40",
+  //     optionInfo: [
+  //       { title: "Creative", features: "Design Enabled" },
+  //       { title: "Vibrant", features: "Color Usage" },
+  //       { title: "Eye", features: "Catching Design" },
+  //       { title: "Extreme", features: "Typography" },
+  //       { title: "Exceptional", features: "Design" },
+  //     ],
+  //   },
+  //   {
+  //     name: "Developing",
+  //     subName: "PRODUCT",
+  //     price: "60",
+  //     optionInfo: [
+  //       { title: "Creative", features: "Design Enabled" },
+  //       { title: "Vibrant", features: "Color Usage" },
+  //       { title: "Eye", features: "Catching Design" },
+  //       { title: "Extreme", features: "Typography" },
+  //       { title: "Exceptional", features: "Design" },
+  //     ],
+  //   },
+  //   {
+  //     name: "Supporting",
+  //     subName: "CLIENTS",
+  //     price: "80",
+  //     optionInfo: [
+  //       { title: "Creative", features: "Design Enabled" },
+  //       { title: "Vibrant", features: "Color Usage" },
+  //       { title: "Eye", features: "Catching Design" },
+  //       { title: "Extreme", features: "Typography" },
+  //       { title: "Exceptional", features: "Design" },
+  //     ],
+  //   },
+  // ],
   blogSmallPosts: [
     {
       date: "April, 21, 2019",

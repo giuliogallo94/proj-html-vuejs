@@ -12,7 +12,7 @@ export default {
 <template>
   <div class="ms_container">
     <div class="header-bottom pt-3 d-flex align-items-center">
-      <div class="title w-50">
+      <div class="title px-5">
         <h2 class="lh-base">
           <b>Business Planning</b> Digital Technology <b>Modern Solution !</b>
         </h2>
