@@ -13,7 +13,7 @@ export default {
   <section>
     <div class="ms_container">
       <div
-        class="row funnel rounded-5 d-flex align-items-center justify-content-around w-75 py-5 px-3">
+        class="row funnel rounded-5 d-flex align-items-center justify-content-around py-5 px-3">
         <div class="col-5 title-funnel w-50">
           <h2>We Offer Awesome Services</h2>
           <p>
@@ -47,10 +47,10 @@ export default {
     rgba(217, 70, 109, 1) 50%,
     rgba(249, 99, 107, 1) 100%
   );
-
+  width: 80vw;
   position: absolute;
   top: -300%;
-  left: 13%;
+  left: 10vw;
 
   .title-funnel {
     color: white;

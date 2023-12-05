@@ -51,6 +51,28 @@ export const store = reactive({
       url: "566",
     },
   ],
+  carousel: [
+    {
+      title: "Basket of Flower on table",
+      subtitle: "Branding Strategy",
+      url: "8wa60okr-1-790x576.jpg",
+    },
+    {
+      title: "Purinky Products",
+      subtitle: "Digital Experience",
+      url: "DRY-1-790x576.jpg",
+    },
+    {
+      title: "Satisfy Poster",
+      subtitle: "Branding Strategy",
+      url: "a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
+    },
+    {
+      title: "Mock-up",
+      subtitle: "Branding Strategy",
+      url: "84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
+    },
+  ],
   pricingCard: [
     {
       name: "Designing",
@@ -135,7 +157,7 @@ export const store = reactive({
     {
       name: "Michkel Angel",
       position: "Marketing Manager",
-      image: "philipe-cavalcante-539505-unsplash-1024x1024.png",
+      image: "fabio-spinelli-695744-unsplash-1024x1024.png",
       comment:
         "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
       vote: 3,
