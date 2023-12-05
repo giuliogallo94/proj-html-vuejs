@@ -22,11 +22,33 @@ export default {
           meridian sun strikes the upper surface
         </p>
       </div>
-      <div class="container mx-0 px-0 text-center">
+      <!-- <div class="container mx-0 px-0 text-center">
         <div class="row w-100">
           <AppPricingCard
             v-for="item in store.pricingCard"
             :priceOption="item" />
+        </div>
+      </div> -->
+      <div class="container mx-0 px-0 text-center">
+        <div class="row">
+          <AppPricingCard
+            optionName="Designing"
+            optionSubname="PROCESS"
+            optionPrice="40"
+            optionClass="white-card"
+            btnClass="btnPinkPrice priceBtn pageBtn" />
+          <AppPricingCard
+            optionName="Developing"
+            optionSubname="PRODUCT"
+            optionPrice="60"
+            optionClass="pink-card"
+            btnClass="btnWhitePrice priceBtn pageBtn" />
+          <AppPricingCard
+            optionName="Supporting"
+            optionSubname="CLIENTS"
+            optionPrice="80"
+            optionClass="white-card"
+            btnClass="btnPink priceBtn pageBtn" />
         </div>
       </div>
     </div>
@@ -47,6 +69,10 @@ section {
   .container {
     position: absolute;
     top: 40%;
+    left: 10vw;
+  }
+  .row {
+    width: 80vw;
   }
 }
 </style>

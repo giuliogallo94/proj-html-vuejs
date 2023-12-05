@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="ms_card mx-3 shadow-lg rounded-4">
+  <div class="ms_card mx-3 shadow rounded-4">
     <img :src="`src/assets/img/${portfolio.url}`" alt="" class="rounded-4" />
 
     <div class="portfolio-title d-flex justify-content-between pt-3 px-3">
@@ -26,6 +26,8 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 .ms_card {
+  min-width: calc(100vw / 3.75);
+
   img {
     max-width: 100%;
   }

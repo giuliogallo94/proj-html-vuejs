@@ -53,6 +53,11 @@ export const store = reactive({
   ],
   carousel: [
     {
+      title: "Satisfy Poster",
+      subtitle: "Digital Experience",
+      url: "a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
+    },
+    {
       title: "Basket of Flower on table",
       subtitle: "Branding Strategy",
       url: "8wa60okr-1-790x576.jpg",

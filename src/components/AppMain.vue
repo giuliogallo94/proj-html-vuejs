@@ -6,6 +6,7 @@ import AppBlog from "./AppBlog.vue";
 import AppTestimonial from "./AppTestimonial.vue";
 import AppClients from "./AppClients.vue";
 import AppPortfolio from "./AppPortfolio.vue";
+import AppCarouselProva from "./AppCarouselProva.vue";
 
 export default {
   data() {
@@ -19,6 +20,7 @@ export default {
     AppTestimonial,
     AppClients,
     AppPortfolio,
+    AppCarouselProva,
   },
 };
 </script>
@@ -31,6 +33,7 @@ export default {
   <AppBlog />
   <AppTestimonial />
   <AppClients />
+  <AppCarouselProva />
 </template>
 
 <style scoped></style>

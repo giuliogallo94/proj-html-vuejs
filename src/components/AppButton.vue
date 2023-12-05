@@ -11,10 +11,11 @@ export default {
 </script>
 
 <template>
-  <div class="ms_button">
-    <button class="rounded-pill" :class="btnClass">
+  <div class="ms_button rounded-pill d-flex" :class="btnClass">
+    <button class="rounded-pill">
       <a href="" class="text-decoration-none"> {{ btnText }}</a>
     </button>
+    <div class="arrow ms-4">&rarr;</div>
   </div>
 </template>
 /Users/ggallo/Desktop/corporate-landing/screencapture.png
@@ -22,13 +23,18 @@ export default {
 @use "../style/partials/variables" as *;
 
 .ms_button {
-  //   width: fit-content;
+  width: fit-content;
   button {
     border: none;
+    background-color: transparent;
   }
   a {
     color: white;
     font-size: 17px;
+  }
+
+  .arrow {
+    display: none;
   }
 }
 .btnBlue {
@@ -48,11 +54,37 @@ export default {
   );
 }
 
+.btnPinkPrice {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 54, 109, 1) 0%,
+    rgba(212, 64, 109, 1) 50%,
+    $mainPink 100%
+  );
+  .arrow {
+    display: block;
+    color: white;
+  }
+}
+
 .btnWhite {
   background-color: white;
 
   a {
     color: rgba(0, 0, 0, 0.616);
+  }
+}
+
+.btnWhitePrice {
+  background-color: white;
+
+  a {
+    color: $mainPink;
+  }
+
+  .arrow {
+    display: block;
+    color: $mainPink;
   }
 }
 
@@ -62,5 +94,9 @@ export default {
 
 .pageBtn {
   padding: 0.4rem 2rem;
+}
+
+.priceBtn {
+  font-weight: bold;
 }
 </style>
