@@ -166,8 +166,27 @@ export const store = reactive({
   ourContact: {
     name: "Phlox Corporate",
     address:
-      "Patricia C. Amedee 4401 Waldeck Stree Grapevine Nashville, Tx 76051",
+      "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051",
     phone: "+99 (0) 101 0000 888",
     email: "info@yourdomain.com",
   },
+  copyrights: "2020 Phlox. All Rights Reserved.",
+  socials: [
+    {
+      name: "Instagram",
+      icon: "fa-instagram",
+    },
+    {
+      name: "Linkedin",
+      icon: "fa-linkedin-in",
+    },
+    {
+      name: "Facebook",
+      icon: "fa-facebook-f",
+    },
+    {
+      name: "Twitter",
+      icon: "fa-twitter",
+    },
+  ],
 });

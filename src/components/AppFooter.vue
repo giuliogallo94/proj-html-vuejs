@@ -1,4 +1,5 @@
 <script>
+import AppBottomFooter from "./AppBottomFooter.vue";
 import AppFunnel from "./AppFunnel.vue";
 import AppTopFooter from "./AppTopFooter.vue";
 
@@ -6,14 +7,15 @@ export default {
   data() {
     return {};
   },
-  components: { AppFunnel, AppTopFooter },
+  components: { AppFunnel, AppTopFooter, AppBottomFooter },
 };
 </script>
 
 <template>
-  <footer class="pb-5">
+  <footer>
     <AppFunnel />
     <AppTopFooter />
+    <AppBottomFooter />
   </footer>
 </template>
 
