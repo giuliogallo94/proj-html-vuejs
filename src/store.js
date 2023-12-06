@@ -2,6 +2,7 @@ import { reactive } from "vue";
 
 export const store = reactive({
   currentIndex: 0,
+  chatLive: false,
   navLinks: [
     {
       linkName: "Home",

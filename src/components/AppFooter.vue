@@ -1,4 +1,5 @@
 <script>
+import { store } from "../store";
 import AppBottomFooter from "./AppBottomFooter.vue";
 import AppChatLive from "./AppChatLive.vue";
 import AppFunnel from "./AppFunnel.vue";
@@ -6,7 +7,7 @@ import AppTopFooter from "./AppTopFooter.vue";
 
 export default {
   data() {
-    return {};
+    return { store };
   },
   components: { AppFunnel, AppTopFooter, AppBottomFooter, AppChatLive },
 };
@@ -17,7 +18,7 @@ export default {
     <AppFunnel />
     <AppTopFooter />
     <AppBottomFooter />
-    <AppChatLive />
+    <AppChatLive v-if="store.chatLive" />
   </footer>
 </template>
 

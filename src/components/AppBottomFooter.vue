@@ -4,7 +4,16 @@ export default {
   data() {
     return { store };
   },
-  props: {},
+
+  methods: {
+    showChat() {
+      if (this.store.chatLive == false) {
+        this.store.chatLive = true;
+      } else {
+        this.store.chatLive = false;
+      }
+    },
+  },
 };
 </script>
 
@@ -23,13 +32,15 @@ export default {
         <div class="go-up rounded-5 px-1">
           <span> &uarr; </span>
         </div>
-        <div class="chat-logo rounded-5">
-          <i class="fa-regular fa-comment fa-flip-horizontal"></i>
+        <div
+          class="chat-logo rounded-5"
+          :class="store.chatLive ? `logo-fixed` : ``"
+          @click="showChat">
+          <i
+            v-if="store.chatLive == false"
+            class="fa-regular fa-comment fa-flip-horizontal"></i>
+          <i v-if="store.chatLive" class="fa-regular fa-x"></i>
         </div>
-        <!-- <div class="chat-live">
-          <div class="chat-header"><p>Chat Live</p></div>
-          <div class="chat-main"></div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -69,10 +80,15 @@ export default {
     color: white;
     position: absolute;
     right: 1%;
-    bottom: 10%;
+    bottom: 8%;
     i {
       padding: 0.8rem;
     }
+  }
+  .logo-fixed {
+    position: fixed;
+    right: 1%;
+    bottom: 0.5%;
   }
 }
 </style>
