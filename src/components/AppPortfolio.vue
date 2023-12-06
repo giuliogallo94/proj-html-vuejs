@@ -9,8 +9,9 @@ export default {
     };
   },
 
-  components: { AppPortfolioCard },
-  mounted() {},
+  components: {
+    AppPortfolioCard,
+  },
 
   methods: {
     showNext() {
@@ -26,6 +27,9 @@ export default {
       } else {
         this.store.currentIndex = this.store.currentIndex - 1;
       }
+    },
+    changeActive(index) {
+      this.store.currentIndex = index;
     },
   },
 };
@@ -89,6 +93,15 @@ export default {
         "
         :carousel="store.portfolio" />
     </div>
+    <div class="text-center">
+      <span
+        v-for="(item, dotIndex) in store.portfolio.length"
+        class="dot"
+        :class="this.store.currentIndex == dotIndex ? `activeDot` : ``"
+        @click="changeActive(dotIndex)"
+        >.</span
+      >
+    </div>
   </section>
 </template>
 
@@ -100,6 +113,14 @@ export default {
 .btn-carousel {
   background-color: white;
   border-color: $mainPink;
+  color: $mainPink;
+}
+.dot {
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.178);
+  cursor: pointer;
+}
+.activeDot {
   color: $mainPink;
 }
 </style>
