@@ -13,6 +13,7 @@
     "axios": "^1.6.2",
     "bootstrap": "^5.2.3",
     "install": "^0.13.0",
+    "luxon": "^3.4.4",
     "npm": "^10.2.4",
     "vue": "^3.3.8",
     "vue-slick-carousel": "^1.0.6"

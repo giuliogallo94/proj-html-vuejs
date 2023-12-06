@@ -220,4 +220,15 @@ export const store = reactive({
       icon: "fa-twitter",
     },
   ],
+  chat: {
+    name: "Chat Bot Live",
+    avatar: "_1",
+    visible: false,
+    messages: [
+      {
+        message: "Ciao, come posso aiutarti?",
+        status: "received",
+      },
+    ],
+  },
 });

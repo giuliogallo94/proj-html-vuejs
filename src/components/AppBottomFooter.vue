@@ -23,9 +23,13 @@ export default {
         <div class="go-up rounded-5 px-1">
           <span> &uarr; </span>
         </div>
-        <div class="chat-live rounded-5">
+        <div class="chat-logo rounded-5">
           <i class="fa-regular fa-comment fa-flip-horizontal"></i>
         </div>
+        <!-- <div class="chat-live">
+          <div class="chat-header"><p>Chat Live</p></div>
+          <div class="chat-main"></div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -59,7 +63,7 @@ export default {
     }
   }
 
-  .chat-live {
+  .chat-logo {
     background-color: #527ceb;
     font-size: 20px;
     color: white;
