@@ -14,12 +14,6 @@ export default {
     AppMain,
     AppFooter,
   },
-  // mounted() {
-  //   for (let i = 0; i < this.store.pricingCard.length; i++) {
-  //     for (let x = 0; x < this.store.pricingCard[i].optionInfo.length; x++)
-  //       console.log(this.store.pricingCard[i].optionInfo[x].title);
-  //   }
-  // },
 };
 </script>
 

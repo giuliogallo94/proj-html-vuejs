@@ -4,7 +4,6 @@ export default {
   data() {
     return { store, msgToSend: "" };
   },
-  props: {},
   methods: {
     sendMsg: function () {
       if (this.msgToSend.length > 0) {
@@ -65,8 +64,8 @@ export default {
 
 .chat-live {
   position: fixed;
-  right: 4%;
-  bottom: 5%;
+  right: 3%;
+  bottom: 4%;
   width: 25vw;
   height: 60vh;
   border: 1px solid white;

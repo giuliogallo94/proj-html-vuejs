@@ -1,10 +1,51 @@
 <script>
 import { store } from "../store";
+import AppMenu from "./AppMenu.vue";
 export default {
   data() {
-    return { store };
+    return {
+      store,
+      quickLinksArray: [
+        {
+          linkName: "Services",
+          url: "#",
+        },
+        {
+          linkName: "Contact",
+          url: "#",
+        },
+        {
+          linkName: "Blog",
+          url: "#",
+        },
+      ],
+
+      resourcesArray: [
+        {
+          linkName: "Art Design",
+          url: "#",
+        },
+        {
+          linkName: "Computer",
+          url: "#",
+        },
+        {
+          linkName: "IT NEWS",
+          url: "#",
+        },
+        {
+          linkName: "Networking",
+          url: "#",
+        },
+        {
+          linkName: "Web Security",
+          url: "#",
+        },
+      ],
+    };
   },
   props: {},
+  components: { AppMenu },
 };
 </script>
 
@@ -22,19 +63,13 @@ export default {
         <div class="col-3">
           <h6><b>Quick Links</b></h6>
           <ul class="list-group list-unstyled lh-lg">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <AppMenu :linksArray="quickLinksArray" liClass="footer-links" />
           </ul>
         </div>
-        <div class="col-3 col-resources">
+        <div class="col-3">
           <h6><b>Resources</b></h6>
           <ul class="list-group list-unstyled lh-lg text-center">
-            <li><a href="#">Art Design</a></li>
-            <li><a href="#">Computer</a></li>
-            <li><a href="#">IT News</a></li>
-            <li><a href="#">Networking</a></li>
-            <li><a href="#">Web Security</a></li>
+            <AppMenu :linksArray="resourcesArray" liClass="footer-links" />
           </ul>
         </div>
         <div class="col-3">

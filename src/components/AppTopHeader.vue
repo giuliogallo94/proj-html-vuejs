@@ -1,15 +1,48 @@
 <script>
 import { store } from "../store";
 import AppButton from "./AppButton.vue";
+import AppMenu from "./AppMenu.vue";
 export default {
   data() {
     return {
       store,
-      isSelected: false,
+      navLinks: [
+        {
+          linkName: "Home",
+          url: "#",
+          isSelected: true,
+        },
+        {
+          linkName: "About",
+          url: "#",
+          isSelected: false,
+        },
+        {
+          linkName: "Services",
+          url: "#",
+          isSelected: false,
+        },
+        {
+          linkName: "Blog",
+          url: "#",
+          isSelected: false,
+        },
+        {
+          linkName: "Contact",
+          url: "#",
+          isSelected: false,
+        },
+        {
+          linkName: "Portfolio",
+          url: "#",
+          isSelected: false,
+        },
+      ],
     };
   },
   components: {
     AppButton,
+    AppMenu,
   },
   methods: {
     selectedLink(link, index) {
@@ -34,7 +67,11 @@ export default {
         <!-- NavLinks -->
         <div class="me-4">
           <ul class="list-group list-group-horizontal list-unstyled">
-            <li
+            <AppMenu
+              :linksArray="this.navLinks"
+              liClass="mx-2 linkNav"
+              selectedClass="mx-2 selected" />
+            <!-- <li
               v-for="(link, index) in store.navLinks"
               class="mx-2"
               :class="link.isSelected ? `selected` : ``"
@@ -42,7 +79,7 @@ export default {
               <a :href="link.url" class="text-decoration-none ms_nav-links">
                 {{ link.linkName }}
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- // NavLinks -->
