@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div
-    class="col-5 rounded-5 wider-post p-4 text-start d-flex justify-content-between align-items-end">
+    class="col-10 col-xl-5 rounded-5 wider-post p-4 text-start d-flex justify-content-between align-items-end mb-4 mb-xl-0">
     <div class="post-content">
       <p class="post-p">{{ post.date }} &middot; by {{ post.author }}</p>
       <h6>{{ post.title }}</h6>

@@ -15,11 +15,11 @@ export default {
 </script>
 
 <template>
-  <div class="col-4">
+  <div class="col-12 col-xl-4 mb-4 mb-xl-0">
     <div
       class="card p-5 rounded-5 shadow-lg border-0 align-items-center"
       :class="optionClass">
-      <div class="optionInfo d-flex flex-column align-items-center lh-lg">
+      <div class="optionInfo d-flex flex-column align-items-center lh-xl">
         <h2>
           <b>{{ priceOption.name }}</b>
         </h2>
@@ -30,13 +30,13 @@ export default {
             <b>{{ priceOption.price }}</b>
           </p>
         </div>
-        <div class="price-bg">
+        <div class="d-none d-xl-block price-bg">
           <b>{{ priceOption.price }}</b>
         </div>
         <span class="month">Per Month</span>
 
         <div class="price-option-info py-5">
-          <ul class="list-unstyled lh-lg features">
+          <ul class="list-unstyled lh-xl features">
             <li v-for="(info, index) in priceOption.optionInfo" :key="index">
               <p>
                 <b>{{ info.title }}</b>
@@ -78,8 +78,8 @@ export default {
   .price-bg {
     font-size: 250px;
     position: absolute;
-    top: -21%;
-    right: -3%;
+    top: -10%;
+    right: -2%;
   }
 }
 

@@ -12,7 +12,7 @@ export default {
 <template>
   <div class="ms_container">
     <div class="header-bottom pt-3 d-flex align-items-center">
-      <div class="title px-3">
+      <div class="title w-100 w-lg-75">
         <h2 class="lh-base">
           <b>Business Planning</b> Digital Technology <b>Modern Solution !</b>
         </h2>
@@ -28,7 +28,7 @@ export default {
           <AppButton btnText="Explore More" btnClass="btnBlue pageBtn" />
         </div>
       </div>
-      <div class="image">
+      <div class="image d-none d-lg-block">
         <img src="../assets/img/header.png" alt="" />
       </div>
     </div>
@@ -37,9 +37,8 @@ export default {
 
 <style lang="scss" scoped>
 .header-bottom {
-  padding-bottom: 8rem;
+  padding-bottom: 2rem;
   .title {
-    margin-right: 5rem;
     h2 {
       color: white;
       font-size: 60px;
@@ -47,6 +46,18 @@ export default {
     p {
       color: #03a7d3e6;
     }
+  }
+
+  .image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-bottom {
+    padding-bottom: 8rem;
   }
 }
 </style>

@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <section id="About">
+  <section id="About" class="pt-5">
     <div class="ms_container">
       <div class="title text-center pb-5">
         <p class="up-title">Testimonial</p>
@@ -34,4 +34,15 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+section {
+  background-color: $bgBlue;
+  color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    background-color: white;
+    color: black;
+  }
+}
 </style>

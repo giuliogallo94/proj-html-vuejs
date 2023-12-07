@@ -7,10 +7,17 @@
 
 body {
   font-family: "Archivo ", sans-serif;
+  width: 100vw;
 }
 
 .ms_container {
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .ms_container {
+    padding: 1rem 5rem;
+  }
 }
 
 .up-title {

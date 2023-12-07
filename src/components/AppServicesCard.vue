@@ -15,12 +15,13 @@ export default {
 </script>
 
 <template>
-  <div class="col rounded-5 pb-5">
+  <div class="col rounded-5 pb-xxl-5 mb-5 mb-xxl-0">
     <div class="ms_card mx-4">
       <div class="service-image rounded-5 p-3">
         <img
           :src="`../src/assets/img/Group-${card.url}.png`"
-          :alt="card.name" />
+          :alt="card.name"
+          class="w-md-50 w-xxl-100" />
       </div>
 
       <div class="service-info pt-3">
@@ -48,6 +49,8 @@ export default {
 
 .col {
   position: relative;
+  padding: 4rem;
+  border: 1px solid $bgBlue;
 
   .service-image {
     background-color: white;
@@ -56,7 +59,7 @@ export default {
     top: -100px;
     left: 25%;
     img {
-      width: 100%;
+      max-width: 100%;
     }
   }
   .services-button {
@@ -73,6 +76,13 @@ export default {
     .services-button {
       display: block;
     }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .col {
+    border: none;
+    padding: 1rem;
   }
 }
 </style>

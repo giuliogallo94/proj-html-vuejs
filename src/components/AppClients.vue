@@ -8,7 +8,8 @@ export default {
 </script>
 
 <template>
-  <section>
+  <div class="white-section d-md-none"></div>
+  <section class="d-none d-md-block">
     <div class="ms_container d-flex justify-content-around">
       <div
         v-for="sponsor in store.clients"
@@ -24,6 +25,11 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.white-section {
+  height: 200px;
+}
+
 section {
   padding-top: 5rem;
   padding-bottom: 10rem;

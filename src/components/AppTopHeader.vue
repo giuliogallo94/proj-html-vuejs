@@ -52,12 +52,20 @@ export default {
     <div class="ms_container" id="Home">
       <div class="header-top d-flex justify-content-between align-items-center">
         <div class="logo">
-          <img src="../assets/img/white-logo-2.png" alt="" />
+          <img
+            src="../assets/img/white-logo-2.png"
+            alt=""
+            class="d-none d-xl-block" />
+          <img
+            src="../assets/img/white-logo-small.png"
+            alt=""
+            class="d-xl-none" />
         </div>
+
         <div
           class="ms_navbar d-flex justify-content-between align-items-center">
           <!-- NavLinks -->
-          <div class="me-4">
+          <div class="me-4 d-none d-md-block">
             <ul class="list-group list-group-horizontal list-unstyled">
               <AppMenu
                 :linksArray="this.navLinks"

@@ -23,7 +23,7 @@ export default {
       <p class="m-0">
         <b>{{ carousel[indexToShow].title }}</b>
       </p>
-      <p class="m-0">{{ carousel[indexToShow].subtitle }}</p>
+      <p class="m-0 d-none d-lg-block">{{ carousel[indexToShow].subtitle }}</p>
     </div>
   </div>
 </template>

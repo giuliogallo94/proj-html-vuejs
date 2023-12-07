@@ -29,7 +29,7 @@ export default {
             <i class="fa-brands mx-3" :class="`${socialLogo.icon}`"></i>
           </li>
         </ul>
-        <div class="go-up rounded-5 px-1">
+        <div class="go-up d-none d-xl-block rounded-5 px-1">
           <a href="#Home" class="px-1"> &uarr; </a>
         </div>
         <div
@@ -78,12 +78,20 @@ export default {
     font-size: 20px;
     color: white;
     position: absolute;
+    bottom: 120%;
     right: 1%;
-    bottom: 8%;
+
     i {
       padding: 0.8rem;
     }
   }
+  @media screen and (min-width: 992px) {
+    .chat-logo {
+      right: 1%;
+      bottom: 8%;
+    }
+  }
+
   .logo-fixed {
     position: fixed;
     right: 1%;

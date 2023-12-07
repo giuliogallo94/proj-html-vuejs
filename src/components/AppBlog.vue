@@ -30,6 +30,11 @@ export default {
 @use "../style/partials/variables" as *;
 
 section {
-  padding-top: 25rem;
+  padding-top: 4rem;
+}
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 35rem;
+  }
 }
 </style>

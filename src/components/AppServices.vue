@@ -21,7 +21,7 @@ export default {
         <p>When, while the lovely valley teems with vapour around meand the</p>
       </div>
       <div class="container text-center card-list py-5">
-        <div class="row row-cols-4 g-5">
+        <div class="row row-cols-1 row-cols-xxl-4 g-5">
           <AppServicesCard
             v-for="cardObj in store.servicesCard"
             :card="cardObj" />

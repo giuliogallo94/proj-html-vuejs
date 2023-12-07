@@ -20,7 +20,7 @@ export default {
     <div class="ms_container">
       <div
         class="row funnel rounded-5 d-flex align-items-center justify-content-around py-5 px-3">
-        <div class="col-5 title-funnel w-50">
+        <div class="col-10 col-xxl-5 title-funnel w-xxl-50">
           <h2>We Offer Awesome Services</h2>
           <p>
             When, while the lovely valley teems with vapour around meand the
@@ -28,10 +28,10 @@ export default {
           </p>
         </div>
         <div
-          class="mail-sub col-5 rounded-pill px-2 py-2 d-flex justify-content-between">
+          class="mail-sub col-10 col-xxl-5 rounded-pill mt-4 mt-xxl-0 px-2 py-2 d-flex justify-content-between">
           <input
             type="text "
-            class="border-0 text-start w-75 px-3"
+            class="border-0 text-start px-3"
             placeholder="Enter Your Email Address"
             v-model="store.newSubscribe" />
           <AppButton

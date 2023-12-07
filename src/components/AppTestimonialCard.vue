@@ -10,8 +10,8 @@ export default {
 </script>
 
 <template>
-  <div class="col-3">
-    <div class="testimonial-card text-center">
+  <div class="col-10 col-xl-3 mb-4 mb-xl-0">
+    <div class="testimonial-card text-center p-4 p-xl-3 rounded-5">
       <img :src="`src/assets/img/${testimonial.image}`" alt="" />
       <div class="stars-vote my-5">
         <i v-for="i in testimonial.vote" class="fa-solid fa-star"></i>
@@ -20,7 +20,7 @@ export default {
           <span> &ldquo;</span>
         </div>
       </div>
-      <p>{{ testimonial.comment }}</p>
+      <p class="w-75 mx-auto">{{ testimonial.comment }}</p>
       <p class="mb-1">
         <b>{{ testimonial.name }}</b>
       </p>
@@ -35,6 +35,8 @@ export default {
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 .testimonial-card {
+  border: 1px solid #b6246e;
+
   img {
     max-width: 25%;
     border: 5px solid #b6246e;
@@ -54,6 +56,12 @@ export default {
       left: 40%;
       color: rgba(0, 0, 0, 0.1);
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonial-card {
+    border: none;
   }
 }
 </style>

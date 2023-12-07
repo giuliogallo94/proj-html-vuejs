@@ -30,7 +30,8 @@ export default {
           meridian sun strikes the upper surface
         </p>
       </div>
-      <div class="container mx-0 px-0 text-center">
+      <div
+        class="container d-flex justify-content-around d-xl-block mx-0 px-0 text-center">
         <div class="row">
           <AppPricingCard
             v-for="(item, option) in store.pricingCard"
@@ -55,18 +56,26 @@ export default {
 section {
   background-color: $bgBlue;
   position: relative;
-  padding-bottom: 15rem;
-  .title {
-    color: white;
-  }
+}
 
+@media screen and (min-width: 1200px) {
+  section {
+    padding-bottom: 15rem;
+  }
+}
+
+.title {
+  color: white;
+}
+
+@media screen and (min-width: 1200px) {
   .container {
     position: absolute;
     top: 40%;
     left: 10vw;
   }
-  .row {
-    width: 80vw;
-  }
+}
+.row {
+  width: 80vw;
 }
 </style>

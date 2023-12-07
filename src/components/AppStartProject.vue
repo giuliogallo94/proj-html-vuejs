@@ -14,10 +14,10 @@ export default {
 <template>
   <section>
     <div class="ms_container d-flex justify-content-between p-5">
-      <div class="image p-5 text-center">
+      <div class="image p-5 text-center d-none d-lg-block">
         <img src="../assets/img/men-data.png" alt="" />
       </div>
-      <div class="section-title w-50 p-5">
+      <div class="section-title w-100 w-lg-50 p-5">
         <p>Start Your Project</p>
         <h2 class="mb-5"><b>Grow Your Business</b> With Our Strategy</h2>
         <p class="blue-p">
@@ -44,7 +44,6 @@ section {
   background-color: $bgBlue;
 
   .image {
-    // position: relative;
     background-image: url(../assets/img/nemoodar.png);
     background-position: 25% 0%;
     background-repeat: no-repeat;
@@ -52,7 +51,6 @@ section {
 
     img {
       max-width: 80%;
-      //   position: absolute;
     }
   }
   .section-title {

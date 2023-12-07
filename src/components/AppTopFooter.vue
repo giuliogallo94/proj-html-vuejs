@@ -53,26 +53,26 @@ export default {
   <div class="top-footer pb-5" id="Contact">
     <div class="ms_container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-6 col-md-3 mb-5">
           <img src="../assets/img/white-logo-2.png" alt="" />
           <p class="mt-4">
             When, while the lovely valley teems with vapour around meand the
             meridian sun strikes the upper surface.
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3">
           <h6><b>Quick Links</b></h6>
           <ul class="list-group list-unstyled lh-lg">
             <AppMenu :linksArray="quickLinksArray" liClass="footer-links" />
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3">
           <h6><b>Resources</b></h6>
-          <ul class="list-group list-unstyled lh-lg text-center">
+          <ul class="list-group list-unstyled lh-lg text-md-center">
             <AppMenu :linksArray="resourcesArray" liClass="footer-links" />
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3">
           <h6><b>Contact Us</b></h6>
           <ul class="list-group list-unstyled lh-lg">
             <li class="mb-3">
@@ -98,7 +98,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 .top-footer {
-  padding-top: 10rem;
+  padding-top: 15rem;
   border-bottom: 1px solid #ffffff80;
 
   .ms_container {
@@ -121,6 +121,12 @@ export default {
         color: white;
       }
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .top-footer {
+    padding-top: 10rem;
   }
 }
 </style>
