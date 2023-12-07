@@ -51,12 +51,7 @@ export default {
   position: relative;
 }
 .funnel {
-  background: linear-gradient(
-    90deg,
-    rgba(182, 37, 110, 1) 0%,
-    rgba(217, 70, 109, 1) 50%,
-    rgba(249, 99, 107, 1) 100%
-  );
+  background: $bgGradientPink;
   width: 80vw;
   position: absolute;
   top: -300%;

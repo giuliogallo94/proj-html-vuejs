@@ -38,8 +38,10 @@ export default {
         <div class="price-option-info py-5">
           <ul class="list-unstyled lh-lg features">
             <li v-for="(info, index) in priceOption.optionInfo" :key="index">
-              <b>{{ info.title }}</b>
-              {{ info.features }}
+              <p>
+                <b>{{ info.title }}</b>
+                {{ info.features }}
+              </p>
             </li>
           </ul>
         </div>
@@ -79,15 +81,6 @@ export default {
     top: -21%;
     right: -3%;
   }
-  .month {
-    font-size: 15px;
-  }
-
-  .price-option-info {
-    .features {
-      font-size: 15px;
-    }
-  }
 }
 
 .white-card {
@@ -97,12 +90,7 @@ export default {
 }
 
 .pink-card {
-  background: linear-gradient(
-    90deg,
-    rgba(200, 54, 109, 1) 0%,
-    rgba(212, 64, 109, 1) 50%,
-    $mainPink 100%
-  );
+  background: $bgGradientPink;
   color: white;
   .price-bg {
     color: rgba(255, 255, 255, 0.178);

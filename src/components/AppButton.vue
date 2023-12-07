@@ -21,14 +21,6 @@ export default {
     </button>
     <div class="arrow ms-4">&rarr;</div>
   </div>
-  <!-- <a href="" class="text-decoration-none">
-    <div class="ms_button rounded-pill d-flex" :class="btnClass">
-      <button class="rounded-pill" :class="btnTextClass">
-        {{ btnText }}
-      </button>
-      <div class="arrow ms-4">&rarr;</div>
-    </div>
-  </a> -->
 </template>
 
 <style lang="scss" scoped>
@@ -50,47 +42,22 @@ export default {
   }
 }
 .btnBlue {
-  background: linear-gradient(
-    90deg,
-    $mainBlue 0%,
-    rgba(18, 109, 166, 1) 50%,
-    rgba(29, 66, 134, 1) 100%
-  );
+  background: $bgGradientBlue;
 
   &:hover {
-    background: linear-gradient(
-      90deg,
-      rgba(200, 54, 109, 1) 0%,
-      rgba(212, 64, 109, 1) 50%,
-      $mainPink 100%
-    );
+    background: $bgGradientPink;
   }
 }
 .btnPink {
-  background: linear-gradient(
-    90deg,
-    rgba(200, 54, 109, 1) 0%,
-    rgba(212, 64, 109, 1) 50%,
-    $mainPink 100%
-  );
+  background: $bgGradientPink;
 
   &:hover {
-    background: linear-gradient(
-      90deg,
-      $mainBlue 0%,
-      rgba(18, 109, 166, 1) 50%,
-      rgba(29, 66, 134, 1) 100%
-    );
+    background: $bgGradientBlue;
   }
 }
 
 .btnPinkArrow {
-  background: linear-gradient(
-    90deg,
-    rgba(200, 54, 109, 1) 0%,
-    rgba(212, 64, 109, 1) 50%,
-    $mainPink 100%
-  );
+  background: $bgGradientPink;
   .arrow {
     display: block;
     color: white;
@@ -127,12 +94,7 @@ export default {
 }
 
 .arrowBtn {
-  background: linear-gradient(
-    90deg,
-    rgba(200, 54, 109, 1) 0%,
-    rgba(212, 64, 109, 1) 50%,
-    $mainPink 100%
-  );
+  background: $bgGradientPink;
   padding: 0.5rem;
   button {
     a {

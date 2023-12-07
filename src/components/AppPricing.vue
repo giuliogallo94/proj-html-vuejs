@@ -42,8 +42,7 @@ export default {
                 : `btnPinkArrow pageBtn`
             "
             :optionClass="item.isSelected == true ? `pink-card` : `white-card`"
-            @click="changeClasses(option)"
-            @mouseleave="" />
+            @click="changeClasses(option)" />
         </div>
       </div>
     </div>

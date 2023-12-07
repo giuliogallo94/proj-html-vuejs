@@ -40,9 +40,6 @@ export default {
     border: 5px solid #b6246e;
     border-radius: 50%;
   }
-  p {
-    font-size: 15px;
-  }
 
   .stars-vote {
     position: relative;

@@ -59,16 +59,9 @@ export default {
       width: 100%;
     }
   }
-
-  .service-info {
-    font-size: 15px;
-  }
-
   .services-button {
     display: none;
     position: absolute;
-    // width: 100%;
-    // border: 1px solid black;
     left: calc((337.5px / 2) - (54.77px / 2));
     bottom: -7%;
   }

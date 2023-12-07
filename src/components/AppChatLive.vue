@@ -93,14 +93,16 @@ export default {
         padding: 15px 15px 20px 15px;
         min-width: 40%;
         max-width: 60%;
-        background: $bgBlue;
         border-radius: 10px;
-        font-size: 15px;
         color: white;
       }
 
+      .received {
+        background: $bgGradientPink;
+      }
       .sent {
         align-self: flex-end;
+        background-color: $bgBlue;
       }
     }
   }

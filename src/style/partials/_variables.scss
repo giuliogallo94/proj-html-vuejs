@@ -1,3 +1,17 @@
 $bgBlue: #090f44;
 $mainPink: #f9636b;
 $mainBlue: #03a7d3e6;
+
+$bgGradientPink: linear-gradient(
+  90deg,
+  rgba(182, 37, 110, 1) 0%,
+  rgba(217, 70, 109, 1) 50%,
+  rgba(249, 99, 107, 1) 100%
+);
+
+$bgGradientBlue: linear-gradient(
+  90deg,
+  $mainBlue 0%,
+  rgba(18, 109, 166, 1) 50%,
+  rgba(29, 66, 134, 1) 100%
+);

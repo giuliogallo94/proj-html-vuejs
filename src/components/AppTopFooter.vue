@@ -103,7 +103,6 @@ export default {
 
   .ms_container {
     p {
-      font-size: 15px;
       color: #ffffff80;
     }
     h6 {
@@ -112,17 +111,14 @@ export default {
 
     ul {
       li {
-        font-size: 15px;
         color: #ffffff80;
 
         a {
-          text-decoration: none;
           color: #ffffff80;
         }
       }
       .white-text {
         color: white;
-        font-size: 15px;
       }
     }
   }

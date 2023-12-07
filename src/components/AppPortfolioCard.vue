@@ -32,18 +32,12 @@ export default {
 @use "../style/partials/variables" as *;
 .ms_card {
   min-width: calc(100vw / 3.75);
-  font-size: 15px;
   img {
     max-width: 100%;
   }
 
   &:hover {
-    background: linear-gradient(
-      90deg,
-      rgba(200, 54, 109, 1) 0%,
-      rgba(212, 64, 109, 1) 50%,
-      $mainPink 100%
-    );
+    background: $bgGradientPink;
 
     b {
       color: white;

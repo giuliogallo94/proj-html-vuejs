@@ -30,7 +30,7 @@ export default {
           </li>
         </ul>
         <div class="go-up rounded-5 px-1">
-          <a href="#Home" class="text-decoration-none"> &uarr; </a>
+          <a href="#Home" class="px-1"> &uarr; </a>
         </div>
         <div
           class="chat-logo rounded-5"
@@ -52,7 +52,6 @@ export default {
 
 .bottom-footer {
   position: relative;
-  font-size: 15px;
   color: #ffffff80;
 
   ul {

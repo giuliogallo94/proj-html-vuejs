@@ -34,12 +34,6 @@ export default {
 <style lang="scss">
 @use "../style/partials/variables" as *;
 
-li {
-  a {
-    font-size: 15px;
-    text-decoration: none;
-  }
-}
 .footer-links {
   a {
     color: #ffffff80;
