@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="About">
     <div class="ms_container">
       <div class="title text-center pb-5">
         <p class="up-title">Testimonial</p>

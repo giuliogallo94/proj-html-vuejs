@@ -13,11 +13,22 @@ export default {
 
 <template>
   <div class="ms_button rounded-pill d-flex" :class="btnClass">
-    <button class="rounded-pill" :class="btnTextClass">
-      <a href="" class="text-decoration-none"> {{ btnText }}</a>
+    <button
+      class="rounded-pill"
+      :class="btnTextClass"
+      @click="$emit(`buttonMethod`)">
+      <a class="text-decoration-none"> {{ btnText }}</a>
     </button>
     <div class="arrow ms-4">&rarr;</div>
   </div>
+  <!-- <a href="" class="text-decoration-none">
+    <div class="ms_button rounded-pill d-flex" :class="btnClass">
+      <button class="rounded-pill" :class="btnTextClass">
+        {{ btnText }}
+      </button>
+      <div class="arrow ms-4">&rarr;</div>
+    </div>
+  </a> -->
 </template>
 
 <style lang="scss" scoped>

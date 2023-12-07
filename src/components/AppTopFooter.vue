@@ -50,7 +50,7 @@ export default {
 </script>
 
 <template>
-  <div class="top-footer pb-5">
+  <div class="top-footer pb-5" id="Contact">
     <div class="ms_container">
       <div class="row">
         <div class="col-3">

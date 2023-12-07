@@ -30,7 +30,7 @@ export default {
           </li>
         </ul>
         <div class="go-up rounded-5 px-1">
-          <span> &uarr; </span>
+          <a href="#Home" class="text-decoration-none"> &uarr; </a>
         </div>
         <div
           class="chat-logo rounded-5"
@@ -69,7 +69,7 @@ export default {
     position: absolute;
     top: 0%;
     right: 5%;
-    span {
+    a {
       color: #060634;
     }
   }

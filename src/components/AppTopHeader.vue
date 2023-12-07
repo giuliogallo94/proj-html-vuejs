@@ -45,20 +45,20 @@ export default {
     AppMenu,
   },
   methods: {
-    selectedLink(link, index) {
-      {
-        for (link = 0; link < this.store.navLinks.length; link++) {
-          this.store.navLinks[link].isSelected = false;
-        }
-        this.store.navLinks[index].isSelected = true;
-      }
-    },
+    // selectedLink(link, index) {
+    //   {
+    //     for (link = 0; link < this.store.navLinks.length; link++) {
+    //       this.store.navLinks[link].isSelected = false;
+    //     }
+    //     this.store.navLinks[index].isSelected = true;
+    //   }
+    // },
   },
 };
 </script>
 
 <template>
-  <div class="ms_container">
+  <div class="ms_container" id="Home">
     <div class="header-top d-flex justify-content-between align-items-center">
       <div class="logo">
         <img src="../assets/img/white-logo-2.png" alt="" />
@@ -70,7 +70,8 @@ export default {
             <AppMenu
               :linksArray="this.navLinks"
               liClass="mx-2 linkNav"
-              selectedClass="mx-2 selected" />
+              selectedClass="mx-2 selected"
+              :sectionTag="this.navLinks.linkName" />
             <!-- <li
               v-for="(link, index) in store.navLinks"
               class="mx-2"

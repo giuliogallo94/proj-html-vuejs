@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="Blog">
     <div class="ms_container text-center">
       <div class="title pb-5">
         <p class="up-title">Blog</p>

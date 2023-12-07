@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="Services">
     <div
       class="ms_container text-center py-5 d-flex flex-column align-items-center">
       <div class="title mb-5">

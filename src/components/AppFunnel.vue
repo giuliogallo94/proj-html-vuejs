@@ -6,6 +6,12 @@ export default {
     return { store };
   },
   components: { AppButton },
+  methods: {
+    addMail() {
+      this.store.mailSubscribed.push(this.store.newSubscribe);
+      this.store.newSubscribe = "";
+    },
+  },
 };
 </script>
 
@@ -22,12 +28,16 @@ export default {
           </p>
         </div>
         <div
-          class="col-5 mail-sub rounded-pill px-2 py-2 d-flex justify-content-between">
+          class="mail-sub col-5 rounded-pill px-2 py-2 d-flex justify-content-between">
           <input
-            type="text"
-            class="rounded-pill border-0 text-start"
-            placeholder="Enter Your Email Address" />
-          <AppButton btnText="Subscribe" btnClass="btnBlue pageBtn" />
+            type="text "
+            class="border-0 text-start w-75 px-3"
+            placeholder="Enter Your Email Address"
+            v-model="store.newSubscribe" />
+          <AppButton
+            btnText="Subscribe"
+            btnClass="btnBlue pageBtn"
+            @buttonMethod="addMail" />
         </div>
       </div>
     </div>
@@ -66,6 +76,10 @@ export default {
       color: grey;
       font-size: 15px;
       text-align: left;
+    }
+
+    input:focus {
+      outline: none;
     }
   }
 }

@@ -27,7 +27,7 @@ export default {
     :class="link.isSelected ? selectedClass : liClass"
     :key="index"
     @click="selectedLink(index, index)">
-    <a :href="link.url">{{ link.linkName }}</a>
+    <a :href="`#${link.linkName}`">{{ link.linkName }}</a>
   </li>
 </template>
 

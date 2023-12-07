@@ -19,9 +19,8 @@ export default {
       <h6>{{ post.title }}</h6>
       <p class="post-p m-0">{{ post.paragraph }}</p>
     </div>
-    <div class="button">
-      <AppButton btnText="Read More" btnClass="btnWhite pageBtn" />
-    </div>
+
+    <AppButton btnText="Read More" btnClass="btnWhite pageBtn" />
   </div>
 </template>
 
@@ -33,7 +32,7 @@ export default {
   background-size: cover;
   color: white;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 
   // Create background-image shadow
   &::before {
